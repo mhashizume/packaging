@@ -5,7 +5,7 @@ require 'find'
 module Pkg::Rpm::Repo
   class << self
     def base_url
-      "http://#{Pkg::Config.builds_server}/#{Pkg::Config.project}/#{Pkg::Config.ref}"
+      "https://#{Pkg::Config.builds_server}/#{Pkg::Config.project}/#{Pkg::Config.ref}"
     end
 
     def ship_repo_configs(repo_configs_directory = 'repo_configs')
